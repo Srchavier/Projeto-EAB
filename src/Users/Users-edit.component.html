@@ -1,0 +1,24 @@
+<h3>Editar usuario</h3>
+
+<div >
+  <div >
+    <ul >
+      <li><a [routerLink]="['/users/' + user.id ]" >Voltar</a></li>
+    </ul>
+  </div>
+</div>
+
+<form action="" (submit)="save()">
+  <div ><label name="title">ID Usuario:</label>
+    <div ><input name="title"  [(ngModel)]="user.id" type="text" ></div>
+  </div>
+  <div ><label for="price">Nome:</label>
+    <div ><input name="price" [(ngModel)]="user.username" type="text" ></div>
+  </div>
+  <div ><label for="cost" >Senha:</label>
+    <div><input name="cost" type="text" [(ngModel)]="user.password"></div>
+  </div>
+  <div >
+    <div ><input type="submit"></div>
+  </div>
+</form>
